@@ -1,22 +1,56 @@
+# -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "./version"
+require "arctic_elvis/shared/version"
 
 Gem::Specification.new do |s|
   s.name        = "arcticelvis3_shared"
-  s.version     = ArcticElvis::VERSION
+  s.version     = ArcticElvis::Shared::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Christian Hager"]
   s.email       = ["christian@rondeventure.com"]
-  s.homepage    = ""
-  s.summary     = %q{Sum}
-  s.description = %q{Desc}
-  
-  #s.add_development_dependency "rspec"
+  s.homepage    = %q{http://github.com/christianhager/arcticelvis3_shared}
+  s.summary = %q{Shared}
+  s.description = %q{desc}
 
-  #s.rubyforge_project = "lorem"
-
-  s.files         = `git ls-files`.split("\n")
-  #s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  #s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  #s.licenses = ["MIT"]
   s.require_paths = ["lib"]
+
+  s.rubygems_version = %q{1.6.2}
+
+  s.extra_rdoc_files = [
+    "LICENSE.txt",
+    "README.rdoc"
+  ]
+
+  s.files = [
+    "Gemfile",
+    "README.rdoc",
+    "LICENSE.txt",
+    "Rakefile",
+    "VERSION",
+    "init.rb",
+    "lib/arctic_elvis/shared/sending_extention.rb",
+    "lib/arctic_elvis/shared/link_extention.rb",
+    "lib/arctic_elvis.rb",
+    "arcticelvis3_shared.gemspec"
+  ]
+
+  s.test_files = [
+    #{}"spec/arcticelvis3_shared_spec.rb",
+    #{}"spec/spec_helper.rb"
+  ]
+
+  #s.add_development_dependency(%q<database_cleaner>, [">= 0"])
+  #s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
+  #s.add_development_dependency(%q<yard>, ["~> 0.6.0"])
+  #s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
+  #s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
+  #s.add_development_dependency(%q<rcov>, [">= 0"])
+  #s.add_development_dependency(%q<reek>, ["~> 1.2.8"])
+  #s.add_development_dependency(%q<roodi>, ["~> 2.1.0"])
+
+  #s.add_dependency(%q<mongoid>)
+  #s.add_dependency(%q<bson>)
+  #s.add_dependency(%q<bson_ext>)
+  #s.add_dependency(%q<bundler>)
 end
