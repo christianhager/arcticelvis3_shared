@@ -1,5 +1,5 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "version"
+require "./version"
 
 Gem::Specification.new do |s|
   s.name        = "arcticelvis3_shared"
