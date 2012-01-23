@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "arctic_elvis/shared/version"
+require "arctic_elvis_shared/version"
 
 Gem::Specification.new do |s|
   s.name        = "arcticelvis3_shared"
-  s.version     = ArcticElvis::Shared::VERSION
+  s.version     = ArcticElvisShared::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Christian Hager"]
   s.email       = ["christian@rondeventure.com"]
@@ -29,9 +29,9 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "init.rb",
-    "lib/arctic_elvis/shared/sending_extention.rb",
-    "lib/arctic_elvis/shared/link_extention.rb",
-    "lib/arctic_elvis.rb",
+    "lib/arctic_elvis_shared/sending_extention.rb",
+    "lib/arctic_elvis_shared/link_extention.rb",
+    "lib/arctic_elvis_shared.rb",
     "arcticelvis3_shared.gemspec"
   ]
 

@@ -1,1 +1,1 @@
-require 'arctic_elvis'
+require 'arctic_elvis_shared'
