@@ -1,3 +1,3 @@
 source :rubygems
 
-gem 'active_support'
+gem 'activesupport', '3.1.3'
