@@ -4,6 +4,7 @@ module ArcticElvisShared
     extend ActiveSupport::Concern
     included do
       embeds_many :links
+      belongs_to :organization, :inverse_of => nil
     end
     
     module InstanceMethods
